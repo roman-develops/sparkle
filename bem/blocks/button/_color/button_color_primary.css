@@ -1,0 +1,14 @@
+.button_color_primary {
+    font-weight: 500;
+    font-style: normal; 
+    background-color: #00A2FF;
+    color: #fff;
+}
+
+.button_color_primary:hover {
+    background-color: #007DF1;
+}
+
+.button_color_primary:active {
+    background-color: #005CE5; 
+}

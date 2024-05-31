@@ -1,0 +1,7 @@
+.fields-form__field {
+    margin: 25px 0; 
+}
+
+.fields-form__field:first-child {
+    margin: 0; 
+}

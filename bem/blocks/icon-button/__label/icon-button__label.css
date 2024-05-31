@@ -1,0 +1,15 @@
+.icon-button__label {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 0;
+    
+    margin-top: 5px;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPARQL Query Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bem/bem.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="graph.js" defer></script>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .noselect {
+            user-select: none;
+        }
+    </style>
+</head>
+<header class="header">
+    <div class="header__container">
+        <h2 class="subtitle header__logo header__item">Sparkle</h2>
+        <div class="field field_size_normal header__field header__item">
+            <input class="field__input field__input_size_normal" type="text" id="search-query" name="search-query" placeholder="Искать по ID">
+            <div class="field__search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M27 27L19.5714 19.5714M12.1429 23.2857C5.98883 23.2857 1 18.2969 1 12.1429C1 5.98883 5.98883 1 12.1429 1C18.2969 1 23.2857 5.98883 23.2857 12.1429C23.2857 18.2969 18.2969 23.2857 12.1429 23.2857Z" stroke="#A2DDFF" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+        <button class="icon-button header__icon-button header__item">
+            <div class="icon-button__icon-container">
+                <svg class="icon-button__icon" xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                    <path d="M15.8571 1L4.42857 1M33 27.5833L33 8.25C33 6.91532 31.9766 5.83334 30.7143 5.83334L3.28572 5.83333C2.02335 5.83333 1 6.91531 1 8.25L1 27.5833C1 28.918 2.02335 30 3.28571 30L30.7143 30C31.9766 30 33 28.918 33 27.5833ZM21.5714 22.75C19.0467 22.75 17 20.586 17 17.9167C17 15.2473 19.0467 13.0833 21.5714 13.0833C24.0961 13.0833 26.1428 15.2473 26.1428 17.9167C26.1428 20.586 24.0961 22.75 21.5714 22.75Z" stroke="black" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <span class="icon-button__label" title="Capture">Capture</span>
+        </button>
+        <button class="icon-button header__icon-button header__item">
+            <div class="icon-button__icon-container">
+                <svg class="icon-button__icon" xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none">
+                    <path d="M9.28571 16.0098L17.5714 16.0098M22.75 8.5049L17.5714 16L22.75 23.5147M30 5.28572C30 7.65143 28.144 9.57144 25.8571 9.57144C23.5703 9.57144 21.7143 7.65143 21.7143 5.28572C21.7143 2.92 23.5703 1 25.8571 1C28.144 1 30 2.92 30 5.28572ZM30 26.7143C30 29.08 28.144 31 25.8571 31C23.5703 31 21.7143 29.08 21.7143 26.7143C21.7143 24.3486 23.5703 22.4286 25.8571 22.4286C28.144 22.4286 30 24.3486 30 26.7143ZM9.28571 16C9.28571 18.3657 7.42971 20.2857 5.14286 20.2857C2.856 20.2857 1 18.3657 1 16C1 13.6343 2.856 11.7143 5.14286 11.7143C7.42971 11.7143 9.28571 13.6343 9.28571 16Z" stroke="black" stroke-width="2" stroke-linecap="square"/>
+                </svg>  
+            </div> 
+            <span class="icon-button__label" title="Build new">Build new</span>
+        </button>
+    </div>
+</header>
+</html>

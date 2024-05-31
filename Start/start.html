@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bem/bem.css">
+    <script src="start.js" defer></script>
+</head>
+<body class="start">
+    <h1 class="title start__title">Sparkle</h1>
+    <form class="start__fields-form" id="sparkle-form">
+        <div class="field form__field">
+            <label class="field__label" for="endpoint">Endpoint</label>
+            <input class="field__input" type="text" id="endpoint" name="endpoint" value="http://localhost:3030/1492/sparql">
+        </div>
+        <div class="field fields-form__field">
+            <label class="field__label" for="link-prefix">Link prefix</label>
+            <input class="field__input" type="text" id="link-prefix" name="link-prefix" value="ups:">
+        </div>
+        <div class="field fields-form__field">
+            <label class="field__label" for="start-resource">Start resource</label>
+            <input class="field__input" type="text" id="start-resource" name="start-resource" value="ups:_d452bf98-ce7f-4587-905d-5d3429648794">
+        </div>
+        <div class="field fields-form__field">
+            <label class="field__label" for="username">Username</label>
+            <input class="field__input" type="text" id="username" name="username" value="admin">
+        </div>
+        <div class="field fields-form__field">
+            <label class="field__label" for="password">Password</label>
+            <input class="field__input" type="text" id="password" name="password" value="admin">
+        </div>
+        <button class="button fields-form__button button_size_big button_width_wide button_color_primary" type="submit">Build graph</button>
+    </form>
+</body>
+</html>

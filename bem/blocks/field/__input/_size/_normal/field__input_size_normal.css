@@ -1,0 +1,14 @@
+.field__input_size_normal {
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 0; 
+
+    padding: 17px 27px 24px 27px; 
+}
